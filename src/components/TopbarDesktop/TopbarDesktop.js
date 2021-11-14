@@ -93,9 +93,9 @@ const TopbarDesktop = props => {
               <span className={css.menuItemBorder} />
               {currentUserListing ? (
                 <FormattedMessage id="TopbarDesktop.editYourListingLink" />
-              ) : (
-                <FormattedMessage id="TopbarDesktop.addYourListingLink" />
-              )}
+              ) : null
+              // <FormattedMessage id="TopbarDesktop.addYourListingLink" />
+              }
             </div>
           </OwnListingLink>
         </MenuItem>
@@ -176,7 +176,7 @@ const TopbarDesktop = props => {
       </NamedLink>
       {search}
       {listingLink}
-      {createListingLink}
+      {/* {createListingLink} */}
       {inboxLink}
       {profileMenu}
       {signupLink}
