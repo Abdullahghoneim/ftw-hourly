@@ -23,6 +23,7 @@ import { TopbarContainer } from '../../containers';
 import facebookImage from '../../assets/yogatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/yogatimeTwitter-600x314.jpg';
 import css from './LandingPage.module.css';
+import MainHome from './MainHome';
 
 export const LandingPageComponent = props => {
   const {
@@ -69,21 +70,7 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
-          <ul className={css.sections}>
-            <li className={css.section}>
-              <div className={css.sectionContentFirstChild}>
-                <SectionLocations />
-              </div>
-            </li>
-            <li className={css.section}>
-              <div className={css.sectionContent}>
-                <SectionHowItWorks
-                  currentUserListing={currentUserListing}
-                  currentUserListingFetched={currentUserListingFetched}
-                />
-              </div>
-            </li>
-          </ul>
+          <MainHome />
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />

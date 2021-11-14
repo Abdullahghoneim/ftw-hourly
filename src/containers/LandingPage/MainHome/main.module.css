@@ -1,0 +1,30 @@
+.Container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Wraper {
+  display: flex;
+  gap: 2rem;
+}
+
+.Filter {
+  width: 17rem;
+}
+
+.MainList {
+}
+.Product {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ProductName {
+  color: #00bfe6;
+  font-size: 1.1rem;
+}
